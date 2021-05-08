@@ -1,4 +1,4 @@
-package com.entiti;
+package com.juaracoding.perpustakaan.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -15,12 +15,15 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 
 @Entity
-@Table (name = "dataorang")
+@Table(name="dataorang")
 public class DataOrang {
 	@Id
-	@GeneratedValue (strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private String Nama;
 	private String Email;
-	private String Nomer;
+	private int Nomer;
 	private String Alamat;
-}
+
+		
+	}
+
